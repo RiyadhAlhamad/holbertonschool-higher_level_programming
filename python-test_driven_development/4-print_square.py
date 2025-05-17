@@ -1,19 +1,30 @@
 #!/usr/bin/python3
-def list_division(my_list_1, my_list_2, list_length):
-    new_list = []
-    for i in range(list_length):
-        try:
-            result = my_list_1[i] / my_list_2[i]
-        except ZeroDivisionError:
-            print("division by 0")
-            result = 0
-        except TypeError:
-            print("wrong type")
-            result = 0
-        except IndexError:
-            print("out of range")
-            result = 0
-        finally:
-            new_list.append(result)
+"""
 
-    return (new_list)
+This module is composed by a function that prints a square with the character #
+
+"""
+
+
+def print_square(size):
+    """ Function that prints a square with the character #
+
+    Args:
+        size: size of the square printed
+
+    Returns:
+        No return
+
+    Raises:
+        TypeError: If size is not an integer number
+
+
+    """
+
+    if not isinstance(size, int):
+        raise TypeError("size must be an integer")
+    if size < 0:
+        raise ValueError("size must be >= 0")
+
+    for i in range(size):
+        print("#" * size)
