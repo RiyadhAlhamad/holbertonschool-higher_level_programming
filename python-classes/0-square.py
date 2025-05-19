@@ -6,4 +6,3 @@ class Square:
     
     def __dir__():
         print("{}")
-        
