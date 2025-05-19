@@ -5,4 +5,4 @@ class Square:
         print(self)
     
     def __dir__():
-        print("{}")
+        print("{kk}")
