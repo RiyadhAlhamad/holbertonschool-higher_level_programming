@@ -3,3 +3,7 @@ class Square:
 
     def __init__(self):
         print(self)
+    
+    def __dir__():
+        print("{}")
+        
