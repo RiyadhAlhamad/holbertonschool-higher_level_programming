@@ -1,22 +1,23 @@
 #!/usr/bin/python3
-"""Class Square that defines a square.
-   Reprsents a squate.
-   private instance attribute: size.
-   Instantation with size (no type/value verification)."""
+"""Module that defines a class Square"""
 
 
 class Square:
-    """Initialize the square with a size"""
+    """Represents the square."""
 
     def __init__(self, size=0):
-        """must be an integer otherwise raise a TypeError"""
-        try:
-            size = int(size)
-        except (ValueError, TypeError):
-            raise TypeError("size must be an integer")
+        """Initialize a new Square.
 
-        """if size is less than 0 must raixe a valueError exception"""
-        if size < 0:
+
+        Args:
+            size (int): the size of the square.
+        Raises:
+            TypeError: If size is not an integer.
+            ValueError: If size is less than 0.
+        """
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        elif size < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
+
+        self.__size = size
