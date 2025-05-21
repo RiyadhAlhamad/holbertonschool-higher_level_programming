@@ -1,11 +1,9 @@
 #!/usr/bin/python3
+"""lass Square that defines a square"""
 class Square:
-    """
-    Class that defines a square by its size.
-    """
+    """Class that defines a square by its size."""
+    
     def __init__(self, size):
+        """Initialize the square with a size"""
         self.__size = size
-        """Initialize the square with a private size attribute.
-        Args:
-            param1 (int): size of the square
-        """
+        """Private instance attribute"""
