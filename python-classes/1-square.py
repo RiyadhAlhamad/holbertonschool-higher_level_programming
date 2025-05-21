@@ -5,5 +5,7 @@ class Square:
     """
     def __init__(self, size):
         self.__size = size
-        """Initialize the square with a private size attribute."""
-        
+        """Initialize the square with a private size attribute.
+        Args:
+            param1 (int): size of the square
+        """
