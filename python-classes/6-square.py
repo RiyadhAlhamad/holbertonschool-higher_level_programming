@@ -5,6 +5,14 @@
 class Square:
     """ Define a square by size """
     def __init__(self, size=0, position=(0, 0)):
+        """Initialize a new Square.
+
+        Args:
+            size (int): the size of the square.
+        Raises:
+            TypeError: If size is not an integer.
+            ValueError: If size is less than 0.
+        """
         self.__size = size
         self.position = position
 
