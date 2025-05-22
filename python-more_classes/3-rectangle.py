@@ -74,10 +74,10 @@ class Rectangle:
 
     def __str__(self):
         """print: object of the Rectangle.
-        
+
             Args:
                 result: For save the operation with width
-                
+
             Return: For return the arg result to str()
         """
         if self.width == 0 or self.height == 0:
