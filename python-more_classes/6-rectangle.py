@@ -4,9 +4,10 @@
 
 class Rectangle:
     """Represents a Rectangle with specific width and height
-        
+
         Args:
-            number_of_instances: by defult equal 0 but we can incremented each new instance instantiation
+            number_of_instances: by defult equal 0 but we can
+            incremented each new instance instantiation
             and decremented each instance deletion.
     """
 
