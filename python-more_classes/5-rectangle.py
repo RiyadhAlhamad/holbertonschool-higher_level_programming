@@ -92,6 +92,6 @@ class Rectangle:
         """Return: Should return a string representation of the rectangle."""
         return f"Rectangle({self.width}, {self.height})"
 
-    def __delattr__(self):
+    def __del__(self):
         """print: message for user to delete rectangle."""
         print("Bye rectangle...")
