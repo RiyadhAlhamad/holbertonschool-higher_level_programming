@@ -36,7 +36,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Gets the cuttent height of Rectangle."""
+        """Gets the current height of Rectangle."""
         return self.__height
 
     @width.setter
@@ -93,7 +93,7 @@ class Rectangle:
 
             Return: For return the arg result to str()
         """
-        if self.__width == 0 or self.__height == 0:
+        if self.width == 0 or self.height == 0:
             return ""
 
         if hasattr(self, 'print_symbol'):
@@ -102,8 +102,8 @@ class Rectangle:
             symbol = str(Rectangle.print_symbol)
 
         result = ""
-        for _ in range(self.__height):
-            result += symbol * self.__width + "\n"
+        for _ in range(self.height):
+            result += symbol * self.width + "\n"
         return result.rstrip()
 
     def __repr__(self):
@@ -119,11 +119,9 @@ class Rectangle:
         """Returns the biggest rectangle based on the area."""
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
-        elif not isinstance(rect_2, Rectangle):
+        if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
-        if rect_1.area() == rect_2.area():
-            return rect_1.area()
-        elif rect_1.area() > rect_2.area():
-            return rect_1.area()
-        else:
-            return rect_2.area()
+        if rect_1.area() >= rect_2.area():
+            return rect_1
+        
+        return rect_2
