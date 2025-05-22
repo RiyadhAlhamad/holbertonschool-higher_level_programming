@@ -32,7 +32,7 @@ class Rectangle:
 
             Args:
                 value (int): new width of the Rectangle
-            
+
             Raises:
                 TypeError: If value is not an integer.
                 ValueError: If value is less than 0.
@@ -50,7 +50,7 @@ class Rectangle:
 
             Args:
                 value (int): new height of the Rectangle
-            
+
             Raises:
                 TypeError: If value is not an integer.
                 ValueError: If value is less than 0.
