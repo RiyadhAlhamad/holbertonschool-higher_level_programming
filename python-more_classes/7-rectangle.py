@@ -93,13 +93,18 @@ class Rectangle:
 
             Return: For return the arg result to str()
         """
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ""
+
+        if hasattr(self, 'print_symbol'):
+            symbol = str(self.print_symbol)
         else:
-            result = ""
-            for _ in range(self.height):
-                result += str(Rectangle.print_symbol) * self.width + "\n"
-            return result.rstrip()
+            symbol = str(Rectangle.print_symbol)
+
+        result = ""
+        for _ in range(self.__height):
+            result += symbol * self.__width + "\n"
+        return result.rstrip()
 
     def __repr__(self):
         """Return: Should return a string representation of the rectangle."""
