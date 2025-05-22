@@ -93,5 +93,5 @@ class Rectangle:
         return f"Rectangle({self.width}, {self.height})"
 
     def __delattr__(self):
-        """Return: message for user to delete rectangle."""
-        return "Bye rectangle..."
+        """print: message for user to delete rectangle."""
+        print("Bye rectangle...")
