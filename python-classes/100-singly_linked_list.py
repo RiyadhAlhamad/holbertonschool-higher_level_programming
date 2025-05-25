@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-"""Module that defines a class Node with data and next_node."""
+"""Module that defines a class Node and class SinglyLinkedList."""
 
 
 class Node:
     """Represents a Node with a specific data and next_node."""
 
     def __init__(self, data, next_node=None):
-        """
-        Initialize a new Square instance.
+        """Initialize a new Square instance.
 
         Args:
             data (int): The data of the Node.
@@ -23,8 +22,7 @@ class Node:
 
     @data.setter
     def data(self, value):
-        """
-        Sets the data of the Node.
+        """Sets the data of the Node.
 
         Args:
             value (int): New data of the Node.
@@ -43,8 +41,7 @@ class Node:
 
     @next_node.setter
     def next_node(self, value):
-        """
-        Sets the next_node of the Node.
+        """Sets the next_node of the Node.
 
         Args:
             value (Node): The value resive the node (Node).
