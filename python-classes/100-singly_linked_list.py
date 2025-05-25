@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module that defines a class Node with data and next_node."""
 
+
 class Node:
     """Represents a Node with a specific data and next_node."""
 
