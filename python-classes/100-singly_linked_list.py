@@ -66,10 +66,10 @@ class SinglyLinkedList:
     def __str__(self):
         """Return: The newList of Node."""
         newList = []
-        while(self.__head):
+        while (self.__head):
             newList.append(self.__head.data)
             self.__head = self.__head.next_node
-        return("\n".join([str(x) for x in sorted(newList)]))
+        return ("\n".join([str(x) for x in sorted(newList)]))
 
     def sorted_insert(self, value):
         """Sorted and insert new Node."""
