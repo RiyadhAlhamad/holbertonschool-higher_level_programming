@@ -6,4 +6,8 @@ class Lookup():
     """Represents a Lookup"""
 
     def lookup(self, obj):
-        return dir(obj)
+        list = []
+        for i in range(obj):
+            for a in obj:
+                list[i] = a
+        return list
