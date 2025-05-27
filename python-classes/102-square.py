@@ -42,25 +42,25 @@ class Square:
             self.__size = value
 
     def __eq__(self, value):
-        """This for compare 2 squares and return is the size of 2 squares is equal"""
+        """Return: This for compare 2 squares and return is the size of 2 squares is equal"""
         return self.area() == value.area()
 
     def __ne__(self, value):
-        """This for compare 2 squares and return is the size of 2 squares is not equal"""
+        """Return: This for compare 2 squares and return is the size of 2 squares is not equal"""
         return self.area() != value.area()
 
     def __gt__(self, value):
-        """This for compare 2 squares and return is the size of 2 squares is greater than"""
+        """Return: This for compare 2 squares and return is the size of 2 squares is greater than"""
         return self.area() > value.area()
 
     def __lt__(self, value):
-        """This for compare 2 squares and return is the size of 2 squares is less than"""
+        """Return: This for compare 2 squares and return is the size of 2 squares is less than"""
         return self.area() < value.area()
 
     def __ge__(self, value):
-        """This for compare 2 squares and return is the size of 2 squares is greater or equal"""
+        """Return: This for compare 2 squares and return is the size of 2 squares is greater or equal"""
         return self.area() >= value.area()
 
     def __le__(self, value):
-        """This for compare 2 squares and return is the size of 2 squares is less or equal"""
+        """Return: This for compare 2 squares and return is the size of 2 squares is less or equal"""
         return self.area() <= value.area()
