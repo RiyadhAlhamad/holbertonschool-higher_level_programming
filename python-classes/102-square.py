@@ -43,24 +43,24 @@ class Square:
 
     def __eq__(self, value):
         """This for compare 2 squares and return is the size of 2 squares is equal"""
-        return self.size == value
+        return Square.area(self) == value.area()
 
     def __ne__(self, value):
         """This for compare 2 squares and return is the size of 2 squares is not equal"""
-        return self.size != value
+        return sSquare.area(self) != value.area()
 
     def __gt__(self, value):
         """This for compare 2 squares and return is the size of 2 squares is greater than"""
-        return self.size > value
+        return Square.area(self) > value.area()
 
     def __lt__(self, value):
         """This for compare 2 squares and return is the size of 2 squares is less than"""
-        return self.size < value
+        return Square.area(self) < value.area()
 
     def __ge__(self, value):
         """This for compare 2 squares and return is the size of 2 squares is greater or equal"""
-        return self.size >= value
+        return Square.area(self) >= value.area()
 
     def __le__(self, value):
         """This for compare 2 squares and return is the size of 2 squares is less or equal"""
-        return self.size <= value
+        return Square.area(self) <= value.area()
