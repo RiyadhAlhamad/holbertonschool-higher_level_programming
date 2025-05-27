@@ -57,10 +57,10 @@ class Square:
         """This for compare 2 squares and return is the size of 2 squares is less than"""
         return self.size < value
 
-    def __ge__(slef, value):
+    def __ge__(self, value):
         """This for compare 2 squares and return is the size of 2 squares is greater or equal"""
         return self.size >= value
 
-    def __le__(slef, value):
+    def __le__(self, value):
         """This for compare 2 squares and return is the size of 2 squares is less or equal"""
         return self.size <= value
