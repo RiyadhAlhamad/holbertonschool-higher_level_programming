@@ -5,4 +5,5 @@
 class Lookup(obj):
     """Represents a Lookup"""
 
-    return dir(obj)
+    def lookup(obj):
+        return dir(obj)
