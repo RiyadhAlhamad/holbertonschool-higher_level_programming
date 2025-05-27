@@ -2,8 +2,8 @@
 """Module that defines a class Lookup"""
 
 
-class Lookup(obj):
+class Lookup():
     """Represents a Lookup"""
 
-    def lookup(obj):
+    def lookup(self, obj):
         return dir(obj)
