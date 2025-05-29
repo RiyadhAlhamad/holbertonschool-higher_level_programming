@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module that defines empty class BaseGeometry."""
+"""Module that defines empty class Rectangle ingerits BaseGeomety."""
 
 
 class Rectangle(BaseGeometry):
