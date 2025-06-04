@@ -5,4 +5,5 @@
 def write_file(filename="", text=""):
     """This function to recive filename to read it to files"""
     with open(filename, 'w') as f:
-        print(f.write(text), end="")
+        f.write(text)
+    return len(text)
