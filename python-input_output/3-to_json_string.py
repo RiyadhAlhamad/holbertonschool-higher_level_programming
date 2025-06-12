@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-"""Moudel read_file to read files"""
+"""Moudel to json string"""
+import json
 
 
-def append_write(filename="", text=""):
-    """This function to recive filename to read it to files"""
-    with open(filename, 'a') as f:
-        f.write(text)
-    return len(text)
+def to_json_string(my_obj):
+    """return list to json"""
+    return json.dumps(my_ob)
