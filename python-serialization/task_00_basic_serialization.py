@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """basic serialization"""
+import json
 
 
 def serialize_and_save_to_file(data, filename):
