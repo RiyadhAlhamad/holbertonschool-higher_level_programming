@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module that contains class_to_json function
+Module that contains class student
 """
 
 
