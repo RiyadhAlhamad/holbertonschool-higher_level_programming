@@ -42,7 +42,7 @@ class Student:
     def reload_from_json(self, json):
         """
         Replaces all attributes of the Student instance
-        
+
         Args:
             json (dict): dictionary containing attribute names and values
         """
