@@ -7,6 +7,7 @@ save_to_jason_file = __import__('5-save_to_jason_file').save_to_jason_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 file_name = "add_item.json"
 
+"""Try to load existing data from file and save file to jason file"""
 item_list = load_from_json_file(file_name)
 item_list.extend(sys.argv[1:])
 save_to_jason_file(item_list, file_name)
