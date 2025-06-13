@@ -36,5 +36,5 @@ class Student:
             elif attr_name == "last_name":
                 result["last_name"] = self.last_name
             elif attr_name == "age":
-                result["age"] = self.age        
+                result["age"] = self.age
         return result
