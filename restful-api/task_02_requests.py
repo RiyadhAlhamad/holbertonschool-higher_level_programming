@@ -18,7 +18,8 @@ def fetch_and_save_posts():
     responed = requests.get(url)
 
     if responed.status_code == 200:
-        list_posts = [{'id' : post['id'], 'title' : post['title'], 'body' : post['body']} for post in responed]
+        all_posts = responed.json()
+        list_posts = [{'id' : post['id'], 'title' : post['title'], 'body' : post['body']} for post in all_posts]
 
     with open('posts.csv', mode='w', newline='', encoding='utf-8') as csvfile:
             my_field = ['id', 'title', 'body']
