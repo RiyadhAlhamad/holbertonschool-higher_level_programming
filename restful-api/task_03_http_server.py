@@ -9,7 +9,7 @@ class SimpleAPIHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
-            self.wfile.write(b"Hello Riyadh Alhamad")
+            self.wfile.write(b"Welcome to the API")
 
         elif self.path == "/data":
             self.send_response(200)
@@ -35,7 +35,7 @@ class SimpleAPIHandler(BaseHTTPRequestHandler):
             self.send_response(404)
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
-            self.wfile.write(b"404 Not Found")
+            self.wfile.write(b"Endpoint not found")
 
 if __name__ == "__main__":
     server = ("", 8000)
