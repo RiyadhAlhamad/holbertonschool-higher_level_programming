@@ -13,19 +13,17 @@ def fetch_and_print_posts():
         for post in posts:
             print(post['title'])
 
-
 def fetch_and_save_posts():
     url = "https://jsonplaceholder.typicode.com/posts"
     responed = requests.get(url)
 
     if responed.status_code == 200:
         all_posts = responed.json()
-        list_posts = [{'id': post['id'], 'title': post['title'],
-                       'body': post['body']} for post in all_posts]
+        list_posts = [{'id' : post['id'], 'title' : post['title'], 'body' : post['body']} for post in all_posts]
 
-    with open('posts.csv', 'w', newline='') as csvfile:
-        my_field = ['id', 'title', 'body']
-        writer = csv.DictWriter(csvfile, fieldnames=my_field)
+        with open('posts.csv', 'w', newline='') as csvfile:
+                my_field = ['id', 'title', 'body']
+                writer = csv.DictWriter(csvfile, fieldnames=my_field)
 
-        writer.writeheader()
-        writer.writerows(list_posts)
+                writer.writeheader()
+                writer.writerows(list_posts)
