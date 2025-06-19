@@ -2,7 +2,7 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 
-class MyServer(BaseHTTPRequestHandler):
+class SimpleAPIHandler(BaseHTTPRequestHandler):
 
     def do_Get(self):
         if self.path == "/":
@@ -39,6 +39,6 @@ class MyServer(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     server = ("", 8000)
-    httpd = HTTPServer(server, MyServer)
+    httpd = HTTPServer(server, SimpleAPIHandler)
     print("server start")
     httpd.serve_forever()
