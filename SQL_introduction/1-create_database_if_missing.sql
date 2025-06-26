@@ -1,0 +1,3 @@
+-- Task 1
+-- create databases
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
