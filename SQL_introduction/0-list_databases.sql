@@ -1,3 +1,3 @@
---Task 0 create database
---List databases
+-- Task 0 create database
+-- List databases
 SHOW DATABASES;
